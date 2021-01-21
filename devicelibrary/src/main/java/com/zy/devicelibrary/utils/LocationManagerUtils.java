@@ -19,9 +19,9 @@ public class LocationManagerUtils {
     LocationManager locationManager;
     public String longitude = "";
     public String latitude = "";
-    public String addressDetails = "";
-    public String address_city = "";
-    public String address_province = "";
+    public String address_details = "";
+    public String city = "";
+    public String provice = "";
 
     public LocationManagerUtils() {
         getNowLocation();
@@ -38,9 +38,9 @@ public class LocationManagerUtils {
                 List<Address> addresses = geocoder.getFromLocation(Double.valueOf(latitude), Double.valueOf(longitude), 1);
                 if (addresses != null && addresses.size() > 0) {
                     Address address = addresses.get(0);
-                    address_province = address.getAdminArea();
-                    address_city = address.getLocality();
-                    addressDetails = address.getAddressLine(0);
+                    provice = address.getAdminArea();
+                    city = address.getLocality();
+                    address_details = address.getAddressLine(0);
                 }
             } catch (Exception e) {
                 //可能会报异常，可能是因为手机不支持Google定位导致
