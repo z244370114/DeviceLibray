@@ -60,8 +60,9 @@
 |abis|String |手机cpu架构，支持的指令集|
 |is_tablet|int |是否是平板(1:是；0：不是)|
 
-![hardware](file:///android_asset/hardware.png)
-![hardware1](file:///android_asset/hardware1.png)
+![hardware](./app/src/main/assets/hardware.png)
+<br>
+![hardware1](./app/src/main/assets/hardware1.png)
 
 # general_data(通用数据)
 |字段名| 类型| 说明
@@ -90,8 +91,8 @@
 |ui_mode_type|String|当前设备支持的UI类型<br>UI_MODE_TYPE_UNDEFINED<br>UI_MODE_TYPE_NORMAL<br>UI_MODE_TYPE_DESK<br>UI_MODE_TYPE_CAR<br>UI_MODE_TYPE_TELEVISION<br>UI_MODE_TYPE_APPLIANCE<br>UI_MODE_TYPE_WATCH<br>UI_MODE_TYPE_VR_HEADSET | 
 |security_patch|String| 安全补丁更新日期| 
 
-![general_data](file:///android_asset/general_data.png)
-![general_data1](file:///android_asset/general_data1.png)
+![general_data](./app/src/main/assets/general_data.png)<br>
+![general_data1](./app/src/main/assets/general_data1.png)
 
 
 # sim_card
@@ -107,7 +108,7 @@
 | sim_serial_number2|String|sim卡2的序列号|
 | number2|String|sim卡2对应手机号|
 
-![sim_card](file:///android_asset/sim_card.png)
+![sim_card](./app/src/main/assets/sim_card.png)
 
 
 # storage(存储)
@@ -121,7 +122,7 @@
 |memory_card_size|long|sd卡总空间(单位byte)|
 |memory_card_size_use|long|sd卡已用空间(单位byte)|
 
-![storage](file:///android_asset/storage.png)
+![storage](./app/src/main/assets/storage.png)
 
 
 # other_data(其它数据)
@@ -141,7 +142,7 @@
 |ringer_mode|Int|<br>0：RINGER_MODE_SILENT（静音模式）<br>1：RINGER_MODE_VIBRATE（震动模式）<br>2：RINGER_MODE_NORMAL（铃音模式）|
 |is_airplane_mode|Int|是否开启飞行模式（0：不是；1：是）|
 
-![other_data](file:///android_asset/other_data.png)
+![other_data](./app/src/main/assets/other_data.png)
 
 # applist(app安装)
 |字段名|类型|说明|
@@ -156,7 +157,7 @@
 |app_type|Int|是否系统应用(1:系统应用；0：非系统应用)|
 |special_permisson_list|List<String>|获取app特殊权限项|
 
-![applist](file:///android_asset/applist.png)
+![applist](./app/src/main/assets/applist.png)
 
 
 # contact(联系人)
@@ -170,7 +171,7 @@
 |starred|int|是否收藏联系人(1:收藏；0：未收藏)|
 |email|String|电子邮件地址|
 
-![contact](file:///android_asset/contact.png)
+![contact](./app/src/main/assets/contact.png)
 
 
 # GPS(定位)-客户端改动
@@ -180,7 +181,7 @@
 |longitude|String|经度|
 |addressDetails|String|GPS详细地址|
 
-![GPS](file:///android_asset/GPS.png)
+![GPS](./app/src/main/assets/GSP.png)
 
 
 
@@ -196,7 +197,7 @@
 |download_files|Int|下载的文件个数|
 |contact_group|int|联系⼈小组个数(基数默认偏大，会算上自带群组名)|
 
-![media_files](file:///android_asset/media_files.png)
+![media_files](./app/src/main/assets/media_files.png)
 
 # network(网络)
 |字段名|类型|说明|
@@ -211,7 +212,7 @@
 |configured_wifi[].ssid|String|SSID / 配置wifi SSID|
 |configured_wifi[].name|String|wifi名称|
 
-![network](file:///android_asset/network.png)
+![network](./app/src/main/assets/network.png)
 
 
 # battery_status(电池)
@@ -224,7 +225,7 @@
 |battery_temperature|Double|电池温度(单位0.1，如359表示35.9°C)|
 |screen_brightness|Double|屏幕亮度(0-255)|
 
-![battery_status](file:///android_asset/battery_status.png)
+![battery_status](./app/src/main/assets/battery_status.png)
 
 
 # sensor[ ] (传感器)
@@ -239,4 +240,4 @@
 |sensor_lists[].power|float|传感器的功率|
 |sensor_lists[].resolution|float|传感器的精度|
 
-![sensor](file:///android_asset/sensor.png)
+![sensor](./app/src/main/assets/sensor.png)
