@@ -13,7 +13,7 @@
 # Step 2. Add the dependency
 
 	dependencies {
-		implementation 'com.github.z244370114:DeviceLibray:1.0.0'
+		implementation 'com.github.z244370114:DeviceLibray:1.0.4'
 	}
 	
 
