@@ -1,0 +1,22 @@
+设备指纹算法：
+第一部分：imei/meid，双卡时优先取meid,取不到meid的情况下取固定的imei(多个imei必须固定取一个，不能随机取其中之一)，得到串1。
+第二部分：设备串号serial不为空时，拼接android.os.Build.MANUFACTURER，得到串2。注意，如果串1和串2中的serial都为空，则取Mac地址+android.os.Build.MANUFACTURER作为串2（注意取法上需要兼容6.0、7.0、9.0以上）。
+第三部分：静态硬件字段组合，依次拼接下面的字段,以"/"为分隔符号，进行32位md5小端法计算得到串3
+android.os.Build.BOARD
+android.os.Build.BRAND
+android.os.Build.DEVICE
+android.os.Build.HARDWARE
+android.os.Build.MODEL 
+android:os.Build.PRODUCT
+android.os.Build.TAGS
+android.os.Build.TYPE
+android.os.Build.USER
+android.os.Build.SUPPORTED_ABIS 数组依次拼接
+android.os.Build.CPU_ABI
+screenWidth
+screenHeight
+screenDensity
+screenDensityDpi
+将串1、2、3依次拼接进行32位md5小端法计算得到device_id。
+
+客户端需要缓存得到的device_id，注意存放的位置，在外部存储中以特定隐藏文件夹+隐藏文件的形式存放，包删除后文件不被删除，别的包安装后先读取指定这个隐藏文件的内容，有device_id则直接用，无则生成；
