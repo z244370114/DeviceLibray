@@ -8,23 +8,78 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.devicelibrary.ListName.generalList
 import com.example.devicelibrary.ListName.hardwareList
+import com.example.devicelibrary.ListName.mediaList
+import com.example.devicelibrary.ListName.otherList
+import com.example.devicelibrary.ListName.simList
+import com.example.devicelibrary.ListName.storageList
 import com.google.gson.Gson
-import com.zy.devicelibrary.data.HardwareData
+import com.zy.devicelibrary.data.*
+import com.zy.devicelibrary.utils.GeneralUtils
+import com.zy.devicelibrary.utils.StorageQueryUtil
 
 
 class ListDataActivity : AppCompatActivity() {
 
+
+    private var map: MutableMap<String, Any>? = null
+    private lateinit var recyclerView: RecyclerView
+    var type = ""
+    val list = mutableListOf<ItemData>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list_data)
-        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
-        val map = JsonMap.getMap(Gson().toJson(HardwareData()))
-        val list = mutableListOf<ItemData>()
+        type = intent.getStringExtra("type").toString()
+        recyclerView = findViewById(R.id.recyclerView)
+        initData()
+    }
+
+    private fun initData() {
+        var lists: Array<String>? = null
+        when (type) {
+            "硬件" -> {
+                map = JsonMap.getMap(Gson().toJson(HardwareData()))
+                lists = hardwareList
+            }
+            "通用数据" -> {
+                map = JsonMap.getMap(Gson().toJson(GeneralData()))
+                lists = generalList
+            }
+            "SD卡界面" -> {
+                map = JsonMap.getMap(Gson().toJson(GeneralUtils.getSimCardInfo()))
+                lists = simList
+            }
+            "存储界面" -> {
+                map = JsonMap.getMap(
+                    Gson().toJson(
+                        StorageQueryUtil.queryWithStorageManager(
+                            StorageData()
+                        )
+                    )
+                )
+                lists = storageList
+            }
+            "其他数据界面" -> {
+                map = JsonMap.getMap(Gson().toJson(OtherData()))
+                lists = otherList
+            }
+            "APP安装" -> {
+
+            }
+            "联系人" -> {
+//                map = JsonMap.getMap(Gson().toJson(OtherData()))
+            }
+            "媒体文件" -> {
+                map = JsonMap.getMap(Gson().toJson(MediaFilesData()))
+                lists = mediaList
+            }
+        }
         var i = 0
-        map.forEach {
+        map?.forEach {
             val itemData = ItemData()
-            itemData.cnName = hardwareList[i]
+            itemData.cnName = lists!![i]
             itemData.ehName = it.key
             itemData.content = it.value.toString()
             list.add(itemData)
@@ -45,7 +100,7 @@ class ListDataActivity : AppCompatActivity() {
 
         override fun onBindViewHolder(holder: ViewHolder, position: Int) {
             val content = dataList!![position]
-            holder.tvCnName.text = "(${content.cnName})"
+            holder.tvCnName.text = "${content.cnName}"
             holder.tvName.text = content.ehName
             holder.tvContent.text = content.content
         }

@@ -30,15 +30,46 @@ class MainActivity : AppCompatActivity() {
             requestPermissions(permissions, REQUEST_CODE_CALL_PHONE)
         }
         findViewById<Button>(R.id.button1).setOnClickListener {
-            startActivity(Intent(this, ListDataActivity::class.java))
+            val intent = Intent(this, ListDataActivity::class.java)
+            intent.putExtra("type", "硬件")
+            startActivity(intent)
         }
-
-        val tvDeviceInfos = findViewById<TextView>(R.id.tvDeviceInfos)
-
-
-        tvDeviceInfos.text = format(Gson().toJson(HardwareData()))
+        findViewById<Button>(R.id.button2).setOnClickListener {
+            val intent = Intent(this, ListDataActivity::class.java)
+            intent.putExtra("type", "通用数据")
+            startActivity(intent)
+        }
+        findViewById<Button>(R.id.button3).setOnClickListener {
+            val intent = Intent(this, ListDataActivity::class.java)
+            intent.putExtra("type", "SD卡界面")
+            startActivity(intent)
+        }
+        findViewById<Button>(R.id.button4).setOnClickListener {
+            val intent = Intent(this, ListDataActivity::class.java)
+            intent.putExtra("type", "存储界面")
+            startActivity(intent)
+        }
+        findViewById<Button>(R.id.button5).setOnClickListener {
+            val intent = Intent(this, ListDataActivity::class.java)
+            intent.putExtra("type", "其他数据界面")
+            startActivity(intent)
+        }
+        findViewById<Button>(R.id.button6).setOnClickListener {
+            val intent = Intent(this, ListDataActivity::class.java)
+            intent.putExtra("type", "APP安装")
+            startActivity(intent)
+        }
+        findViewById<Button>(R.id.button7).setOnClickListener {
+            val intent = Intent(this, ListDataActivity::class.java)
+            intent.putExtra("type", "联系人")
+            startActivity(intent)
+        }
+        findViewById<Button>(R.id.button8).setOnClickListener {
+            val intent = Intent(this, ListDataActivity::class.java)
+            intent.putExtra("type", "媒体文件")
+            startActivity(intent)
+        }
     }
-
 
     override fun onRequestPermissionsResult(
         requestCode: Int,
@@ -46,6 +77,6 @@ class MainActivity : AppCompatActivity() {
         grantResults: IntArray
     ) {
 
-
     }
+
 }
