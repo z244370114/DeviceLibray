@@ -21,6 +21,17 @@
     (1)需要在Application的onCreate()方法里面调用UtilsApp.init(this)进行初始化上下文
     (2)需要注意的是FileUtils.getSDDeviceTxt(),该方法根据算法得到唯一的device_id,判断设备唯一性
 
+# 4. app
+    下载源码安装直观查看对应字段数据明细
+
+# HOME(首页)
+
+![HOME](./app/src/main/assets/home.jpg)
+
+# sdka
+
+![sdka](./app/src/main/assets/sdka.jpg)
+
 
 # hardware(硬件)
 |字段名| 类型| 说明
