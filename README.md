@@ -264,5 +264,5 @@
 # 最后如果你觉得对你有用，麻烦给一个start!
 
 # 如果这个项目对您有很大帮助，并且您想支持该项目的开发和维护，请随时扫描以下二维码进行捐赠。非常感谢您的捐赠。谢谢！
-![wx](./app/src/main/assets/wx.JPG)
+<img alt="sdka" height="400" src="./app/src/main/assets/wx.JPG" width="400"/>
     
