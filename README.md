@@ -26,11 +26,11 @@
 
 # HOME(首页)
 
-<img alt="HOME" height="200" src="./app/src/main/assets/home.jpg" width="200"/>
+<img alt="HOME" height="400" src="./app/src/main/assets/home.jpg" width="400"/>
 
 # sdka
 
-<img alt="sdka" height="200" src="./app/src/main/assets/sdka.jpg" width="200"/>
+<img alt="sdka" height="400" src="./app/src/main/assets/sdka.jpg" width="400"/>
 
 
 # hardware(硬件)
