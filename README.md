@@ -1,6 +1,9 @@
 # DeviceLibray
 获取Android设备详细信息
 
+# Flutter版DeviceLibray
+[https://github.com/z244370114/devicesinfo](https://github.com/z244370114/devicesinfo "https://github.com/z244370114/devicesinfo")
+
 # Step 1. Add the JitPack repository to your build file
 
 	allprojects {
@@ -256,6 +259,7 @@
 
 # 5. app下载地址与二维码，以便安装查看数据列表
 [http://fir.ksym.top/ybk7](http://fir.ksym.top/ybk7 "http://fir.ksym.top/ybk7")
+
 
 ![appdown](./app/src/main/assets/appdown.png)
 
