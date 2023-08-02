@@ -4,6 +4,9 @@
 # Flutter版DeviceLibray
 [https://github.com/z244370114/devicesinfo](https://github.com/z244370114/devicesinfo "https://github.com/z244370114/devicesinfo")
 
+# 免费版 ChatGPT 地址
+[https://ai.firefix.cn](https://ai.firefix.cn "https://ai.firefix.cn")
+
 # Step 1. Add the JitPack repository to your build file
 
 	allprojects {
