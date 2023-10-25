@@ -7,6 +7,13 @@
 # 免费版 ChatGPT 地址
 [https://ai.firefix.cn](https://ai.firefix.cn "https://ai.firefix.cn")
 
+# 免费版 多平台视频解析 地址
+[https://unwatermarker.cn/](https://unwatermarker.cn/ "https://unwatermarker.cn/")
+
+# 免费版 多平台视频解析 APP下载地址
+[https://play.google.com/store/apps/details?id=com.tube.video.saver](https://play.google.com/store/apps/details?id=com.tube.video.saver "https://play.google.com/store/apps/details?id=com.tube.video.saver")
+
+
 # Step 1. Add the JitPack repository to your build file
 
 	allprojects {
