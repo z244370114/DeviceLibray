@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.devicelibrary.ListName.generalList
@@ -33,6 +34,16 @@ class ListDataActivity : AppCompatActivity() {
         setContentView(R.layout.activity_list_data)
         type = intent.getStringExtra("type").toString()
         recyclerView = findViewById(R.id.recyclerView)
+
+        val toolbar: Toolbar = findViewById(R.id.toolbar)
+        setSupportActionBar(toolbar)
+
+        if (supportActionBar != null) {
+            supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+            toolbar.setNavigationOnClickListener {
+                finish()
+            }
+        }
         initData()
     }
 
@@ -43,14 +54,17 @@ class ListDataActivity : AppCompatActivity() {
                 map = JsonMap.getMap(Gson().toJson(HardwareData()))
                 lists = hardwareList
             }
+
             "通用数据" -> {
                 map = JsonMap.getMap(Gson().toJson(GeneralData()))
                 lists = generalList
             }
+
             "SD卡界面" -> {
                 map = JsonMap.getMap(Gson().toJson(GeneralUtils.getSimCardInfo()))
                 lists = simList
             }
+
             "存储界面" -> {
                 map = JsonMap.getMap(
                     Gson().toJson(
@@ -61,16 +75,20 @@ class ListDataActivity : AppCompatActivity() {
                 )
                 lists = storageList
             }
+
             "其他数据界面" -> {
                 map = JsonMap.getMap(Gson().toJson(OtherData()))
                 lists = otherList
             }
+
             "APP安装" -> {
 
             }
+
             "联系人" -> {
 //                map = JsonMap.getMap(Gson().toJson(OtherData()))
             }
+
             "媒体文件" -> {
                 map = JsonMap.getMap(Gson().toJson(MediaFilesData()))
                 lists = mediaList
