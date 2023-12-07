@@ -3,6 +3,7 @@ package com.zy.devicelibrary.data;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.graphics.drawable.Drawable;
 
 import com.zy.devicelibrary.UtilsApp;
 import com.zy.devicelibrary.utils.FileUtils;
@@ -17,6 +18,7 @@ public class AppListData {
     public static class AppListInfo {
 
         public String app_name;
+        public Drawable app_icon;
         public String package_name;
         public long in_time;
         public long up_time;
@@ -54,6 +56,8 @@ public class AppListData {
         for (PackageInfo packageInfo : installedPackages) {
             AppListInfo appListInfo = new AppListInfo();
             appListInfo.app_name = (String) packageInfo.applicationInfo.loadLabel(packageManager);
+            appListInfo.app_icon = packageInfo.applicationInfo.loadIcon(packageManager);
+
             appListInfo.package_name = packageInfo.packageName;
             appListInfo.in_time = packageInfo.firstInstallTime;
             appListInfo.up_time = packageInfo.lastUpdateTime;

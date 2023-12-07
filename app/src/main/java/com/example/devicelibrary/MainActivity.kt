@@ -18,7 +18,9 @@ class MainActivity : AppCompatActivity() {
     private val permissions = arrayOf(
         Manifest.permission.READ_CALENDAR,
         Manifest.permission.READ_CONTACTS,
-        Manifest.permission.READ_PHONE_STATE
+        Manifest.permission.READ_PHONE_STATE,
+        Manifest.permission.WRITE_EXTERNAL_STORAGE,
+        Manifest.permission.READ_EXTERNAL_STORAGE
     )
     val REQUEST_CODE_CALL_PHONE = 50
 

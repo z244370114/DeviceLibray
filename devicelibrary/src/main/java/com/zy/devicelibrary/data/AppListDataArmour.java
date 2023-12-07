@@ -3,6 +3,7 @@ package com.zy.devicelibrary.data;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.graphics.drawable.Drawable;
 
 import com.zy.devicelibrary.UtilsApp;
 
@@ -49,6 +50,7 @@ public class AppListDataArmour {
         for (PackageInfo packageInfo : installedPackages) {
             AppListDataArmour appListData = new AppListDataArmour();
             appListData.appName = (String) packageInfo.applicationInfo.loadLabel(packageManager);
+
             appListData.packageName = packageInfo.packageName;
             appListData.firstInstallTime = packageInfo.firstInstallTime;
             appListData.lastUpdateTime = packageInfo.lastUpdateTime;

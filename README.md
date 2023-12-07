@@ -1,18 +1,22 @@
 # DeviceLibray
+
 获取Android设备详细信息
 
 # Flutter版DeviceLibray
+
 [https://github.com/z244370114/devicesinfo](https://github.com/z244370114/devicesinfo "https://github.com/z244370114/devicesinfo")
 
 # 免费版 ChatGPT 地址
+
 [https://ai.firefix.cn](https://ai.firefix.cn "https://ai.firefix.cn")
 
 # 免费版 多平台视频解析 地址
+
 [https://unwatermarker.cn/](https://unwatermarker.cn/ "https://unwatermarker.cn/")
 
 # 免费版 多平台视频解析 APP下载地址
-[https://play.google.com/store/apps/details?id=com.tube.video.saver](https://play.google.com/store/apps/details?id=com.tube.video.saver "https://play.google.com/store/apps/details?id=com.tube.video.saver")
 
+[https://play.google.com/store/apps/details?id=com.tube.video.saver](https://play.google.com/store/apps/details?id=com.tube.video.saver "https://play.google.com/store/apps/details?id=com.tube.video.saver")
 
 # Step 1. Add the JitPack repository to your build file
 
@@ -28,25 +32,26 @@
 	dependencies {
 		implementation 'com.github.z244370114:DeviceLibray:1.0.4'
 	}
-	
 
 # 3. 使用说明
+
     (1)需要在Application的onCreate()方法里面调用UtilsApp.init(this)进行初始化上下文
     (2)需要注意的是FileUtils.getSDDeviceTxt(),该方法根据算法得到唯一的device_id,判断设备唯一性
 
 # 4. app
+
     下载源码安装直观查看对应字段数据明细
 
 # HOME(首页)
 
-<img alt="HOME" height="400" src="./app/src/main/assets/home.jpg" width="400"/>
-
-# sdka
-
-<img alt="sdka" height="400" src="./app/src/main/assets/sdka.jpg" width="400"/>
-
+| ![](./app/src/main/assets/home.jpg)	   | ![](./app/src/main/assets/sdka.jpg)	   | ![](./app/src/main/assets/app_list.jpg)   |
+|----------------------------------------|----------------------------------------|-------------------------------------------|
+| ![](./app/src/main/assets/1.jpg)	      | ![](./app/src/main/assets/2.jpg)	      | ![](./app/src/main/assets/3.jpg)	         |
+| -------------------------------------- | -------------------------------------- | ----------------------------------------- |
+| ![](./app/src/main/assets/4.jpg)	      | ![](./app/src/main/assets/5.jpg)	      | ![](./app/src/main/assets/contact.jpg)	   |
 
 # hardware(硬件)
+
 |        字段名         |   类型   |             说明              |
 |:------------------:|:------:|:---------------------------:|
 |       model        | String |            设备型号             |
@@ -89,6 +94,7 @@
 ![hardware1](./app/src/main/assets/hardware1.png)
 
 # general_data(通用数据)
+
 |           字段名           |   类型   |                                                                                                     说明                                                                                                      |
 |:-----------------------:|:------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |         and_id          | String |                                                                                                    安卓ID                                                                                                     | 
@@ -118,8 +124,8 @@
 ![general_data](./app/src/main/assets/general_data.png)<br>
 ![general_data1](./app/src/main/assets/general_data1.png)
 
-
 # sim_card
+
 |        字段名         |   类型   |             说明             |
 |:------------------:|:------:|:--------------------------:|
 |     sim_count      |  int   |         设备当前sim卡数量         |
@@ -134,8 +140,8 @@
 
 ![sim_card](./app/src/main/assets/sim_card.png)
 
-
 # storage(存储)
+
 |           字段名           |   类型   |        说明        |
 |:-----------------------:|:------:|:----------------:|
 |        device_id        | String |  关联设备表下deviceId  |
@@ -148,8 +154,8 @@
 
 ![storage](./app/src/main/assets/storage.png)
 
-
 # other_data(其它数据)
+
 |         字段名          |   类型   |                                             说明                                              |
 |:--------------------:|:------:|:-------------------------------------------------------------------------------------------:|
 |    root_jailbreak    |  Int   |                                      是否root（0：不是；1：是）                                       |
@@ -169,6 +175,7 @@
 ![other_data](./app/src/main/assets/other_data.png)
 
 # applist(app安装)
+
 |          字段名           |      类型      |           说明           |
 |:----------------------:|:------------:|:----------------------:|
 |        app_name        |    String    |      已安装应用：APP名称       |
@@ -183,8 +190,8 @@
 
 ![applist](./app/src/main/assets/applist.png)
 
-
 # contact(联系人)
+
 |         字段名          |   类型   |         说明          |
 |:--------------------:|:------:|:-------------------:|
 | contact_display_name | String |        联系人名称        |
@@ -197,8 +204,8 @@
 
 ![contact](./app/src/main/assets/contact.png)
 
-
 # GPS(定位)-客户端改动
+
 |      字段名       |   类型   |   说明    |
 |:--------------:|:------:|:-------:|
 |    latitude    | String |   维度    |
@@ -207,9 +214,8 @@
 
 ![GPS](./app/src/main/assets/GSP.png)
 
-
-
 # media_files(媒体文件)
+
 |       字段名       | 类型  |            说明            |
 |:---------------:|:---:|:------------------------:|
 | audio_internal  | Int |         音频内部文件个数         |
@@ -224,6 +230,7 @@
 ![media_files](./app/src/main/assets/media_files.png)
 
 # network(网络)
+
 |           字段名           |   类型   |              说明              |
 |:-----------------------:|:------:|:----------------------------:|
 |           ip            | String |            路由器IP             |
@@ -238,8 +245,8 @@
 
 ![network](./app/src/main/assets/network.png)
 
-
 # battery_status(电池)
+
 |         字段名         |   类型   |                                                                                                                     说明                                                                                                                     |
 |:-------------------:|:------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |     is_charging     |  int   |                                                                                                   是否正在充电（1：未知状态；2：充电中；3：放电中；4：未充电；5：充满）                                                                                                    |
@@ -251,8 +258,8 @@
 
 ![battery_status](./app/src/main/assets/battery_status.png)
 
-
 # sensor[ ] (传感器)
+
 |            字段名            |   类型   |   说明    |
 |:-------------------------:|:------:|:-------:|
 |    sensor_lists[].type    |  int   | 传感器的类型  |
@@ -266,17 +273,17 @@
 
 ![sensor](./app/src/main/assets/sensor.png)
 
-
 # 5. app下载地址与二维码，以便安装查看数据列表
-[http://fir.ksym.top/ybk7](http://fir.ksym.top/ybk7 "http://fir.ksym.top/ybk7")
 
+[http://fir.ksym.top/ybk7](http://fir.ksym.top/ybk7 "http://fir.ksym.top/ybk7")
 
 ![appdown](./app/src/main/assets/appdown.png)
 
-
 # 你觉得还有什么需要作者更新的，都可以提出来。作者会抽时间完善
+
 # 最后如果你觉得对你有用，麻烦给一个start!
 
 # 如果这个项目对您有很大帮助，并且您想支持该项目的开发和维护，请随时扫描以下二维码进行捐赠。非常感谢您的捐赠。谢谢！
+
 <img alt="sdka" height="400" src="./app/src/main/assets/wx.JPG" width="400"/>
     
