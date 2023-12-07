@@ -47,7 +47,6 @@
 | ![](./app/src/main/assets/home.jpg)	   | ![](./app/src/main/assets/sdka.jpg)	   | ![](./app/src/main/assets/app_list.jpg)   |
 |----------------------------------------|----------------------------------------|-------------------------------------------|
 | ![](./app/src/main/assets/1.jpg)	      | ![](./app/src/main/assets/2.jpg)	      | ![](./app/src/main/assets/3.jpg)	         |
-| -------------------------------------- | -------------------------------------- | ----------------------------------------- |
 | ![](./app/src/main/assets/4.jpg)	      | ![](./app/src/main/assets/5.jpg)	      | ![](./app/src/main/assets/contact.jpg)	   |
 
 # hardware(硬件)
