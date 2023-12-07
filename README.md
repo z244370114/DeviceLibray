@@ -44,10 +44,10 @@
 
 # HOME(首页)
 
-| ![](./app/src/main/assets/home.jpg)	   | ![](./app/src/main/assets/sdka.jpg)	   | ![](./app/src/main/assets/app_list.jpg)   |
-|----------------------------------------|----------------------------------------|-------------------------------------------|
-| ![](./app/src/main/assets/1.jpg)	      | ![](./app/src/main/assets/2.jpg)	      | ![](./app/src/main/assets/3.jpg)	         |
-| ![](./app/src/main/assets/4.jpg)	      | ![](./app/src/main/assets/5.jpg)	      | ![](./app/src/main/assets/contact.jpg)	   |
+| ![](./app/src/main/assets/home.jpg)	   | ![](./app/src/main/assets/8.jpg)	 | ![](./app/src/main/assets/7.jpg)  |
+|----------------------------------------|-----------------------------------|-----------------------------------|
+| ![](./app/src/main/assets/1.jpg)	      | ![](./app/src/main/assets/2.jpg)	 | ![](./app/src/main/assets/3.jpg)	 |
+| ![](./app/src/main/assets/4.jpg)	      | ![](./app/src/main/assets/5.jpg)	 | ![](./app/src/main/assets/6.jpg)	 |
 
 # hardware(硬件)
 

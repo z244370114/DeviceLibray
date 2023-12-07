@@ -46,6 +46,7 @@ class ListDataActivity : AppCompatActivity() {
             toolbar.setNavigationOnClickListener {
                 finish()
             }
+            supportActionBar!!.title = type
         }
         initData()
     }
