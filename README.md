@@ -16,7 +16,7 @@
 
 # 免费版 多平台视频解析 APP下载地址
 
-[https://play.google.com/store/apps/details?id=com.tube.video.saver](https://play.google.com/store/apps/details?id=com.tube.video.saver "https://play.google.com/store/apps/details?id=com.tube.video.saver")
+[https://firefix.cn/](https://firefix.cn/ "https://firefix.cn/")
 
 # Step 1. Add the JitPack repository to your build file
 
