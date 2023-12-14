@@ -284,5 +284,9 @@
 
 # 如果这个项目对您有很大帮助，并且您想支持该项目的开发和维护，请随时扫描以下二维码进行捐赠。非常感谢您的捐赠。谢谢！
 
+# 如果疑问，也可加我VX：duangduang6201 加我时请加备注
+
+
+
 <img alt="sdka" height="400" src="./app/src/main/assets/wx.JPG" width="400"/>
     
