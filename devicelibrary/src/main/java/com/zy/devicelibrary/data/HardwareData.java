@@ -3,6 +3,7 @@ package com.zy.devicelibrary.data;
 import android.os.Build;
 
 import com.zy.devicelibrary.utils.CpuUtils;
+import com.zy.devicelibrary.utils.DevicesUtils;
 
 import static com.zy.devicelibrary.utils.OtherUtils.getBaseband_Ver;
 import static com.zy.devicelibrary.utils.OtherUtils.getResolutions;
@@ -80,6 +81,7 @@ public class HardwareData {
     public String cpu_abi2;
     public String abis = "";
     public int is_tablet;
+    public boolean foldable_phone;
 
     {
         model = Build.MODEL;
@@ -117,6 +119,7 @@ public class HardwareData {
         cpu_abi = Build.CPU_ABI;
         cpu_abi2 = Build.CPU_ABI2;
         is_tablet = isTabletDevice();
+        foldable_phone = DevicesUtils.isFoldDevice(null);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             String[] supportedAbis = Build.SUPPORTED_ABIS;
             for (int i = 0; i < supportedAbis.length; i++) {

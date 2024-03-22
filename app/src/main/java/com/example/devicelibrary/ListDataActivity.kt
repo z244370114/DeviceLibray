@@ -129,7 +129,7 @@ class ListDataActivity : AppCompatActivity() {
 
         override fun onBindViewHolder(holder: ViewHolder, position: Int) {
             val content = dataList!![position]
-            holder.tvCnName.text = "${content.cnName}"
+            holder.tvCnName.text = content.cnName
             holder.tvName.text = content.ehName
             holder.tvContent.text = content.content
         }
