@@ -44,10 +44,10 @@
 
 # HOME(首页)
 
-| ![](./app/src/main/assets/home.jpg)	   | ![](./app/src/main/assets/6.jpg)	 | ![](./app/src/main/assets/7.jpg)  |
-|----------------------------------------|-----------------------------------|-----------------------------------|
-| ![](./app/src/main/assets/1.jpg)	      | ![](./app/src/main/assets/2.jpg)	 | ![](./app/src/main/assets/3.jpg)	 |
-| ![](./app/src/main/assets/4.jpg)	      | ![](./app/src/main/assets/5.jpg)	 | ![](./app/src/main/assets/8.jpg)	 |
+| ![](./app/src/main/assets/home.jpg)	 | ![](./app/src/main/assets/6.jpg)	 | ![](./app/src/main/assets/7.jpg)  |
+|--------------------------------------|-----------------------------------|-----------------------------------|
+| ![](./app/src/main/assets/1.jpg)	    | ![](./app/src/main/assets/2.jpg)	 | ![](./app/src/main/assets/3.jpg)	 |
+| ![](./app/src/main/assets/4.jpg)	    | ![](./app/src/main/assets/5.jpg)	 | ![](./app/src/main/assets/8.jpg)	 |
 
 # hardware(硬件)
 
@@ -87,6 +87,7 @@
 |      cpu_abi2      | String |         获取第二个指令集名称          |
 |        abis        | String |       手机cpu架构，支持的指令集        |
 |     is_tablet      |  int   |       是否是平板(1:是；0：不是)       |
+|   foldable_phone   |  int   |      是否折叠手机(1:是；0：不是)       |
 
 ![hardware](./app/src/main/assets/hardware.png)
 <br>
@@ -285,8 +286,6 @@
 # 如果这个项目对您有很大帮助，并且您想支持该项目的开发和维护，请随时扫描以下二维码进行捐赠。非常感谢您的捐赠。谢谢！
 
 # 如果疑问，也可加我VX：duangduang6201 加我时请加备注
-
-
 
 <img alt="sdka" height="400" src="./app/src/main/assets/wx.JPG" width="400"/>
     
