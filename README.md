@@ -6,17 +6,17 @@
 
 [https://github.com/z244370114/devicesinfo](https://github.com/z244370114/devicesinfo "https://github.com/z244370114/devicesinfo")
 
-# 免费版 ChatGPT 地址
+# 你觉得还有什么需要作者更新的，都可以提出来。作者会抽时间完善
 
-[https://ai.firefix.cn](https://ai.firefix.cn "https://ai.firefix.cn")
+# 最后如果你觉得对你有用，麻烦给一个start!
 
-# 免费版 多平台视频解析 地址
+# 如果这个项目对您有很大帮助，并且您想支持该项目的开发和维护，请随时扫描以下二维码进行捐赠。非常感谢您的捐赠。谢谢！
 
-[https://unwatermarker.cn/](https://unwatermarker.cn/ "https://unwatermarker.cn/")
+# 如果疑问，也可加我VX：duangduang6201 加我时请加备注
 
-# 免费版 多平台视频解析 APP下载地址
+<img alt="sdka" height="400" src="./app/src/main/assets/wx.JPG" width="400"/>
 
-[https://firefix.cn/](https://firefix.cn/ "https://firefix.cn/")
+
 
 # Step 1. Add the JitPack repository to your build file
 
@@ -278,14 +278,3 @@
 [http://fir.ksym.top/ybk7](http://fir.ksym.top/ybk7 "http://fir.ksym.top/ybk7")
 
 ![appdown](./app/src/main/assets/appdown.png)
-
-# 你觉得还有什么需要作者更新的，都可以提出来。作者会抽时间完善
-
-# 最后如果你觉得对你有用，麻烦给一个start!
-
-# 如果这个项目对您有很大帮助，并且您想支持该项目的开发和维护，请随时扫描以下二维码进行捐赠。非常感谢您的捐赠。谢谢！
-
-# 如果疑问，也可加我VX：duangduang6201 加我时请加备注
-
-<img alt="sdka" height="400" src="./app/src/main/assets/wx.JPG" width="400"/>
-    
