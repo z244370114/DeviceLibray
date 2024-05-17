@@ -6,17 +6,21 @@
 
 [https://github.com/z244370114/devicesinfo](https://github.com/z244370114/devicesinfo "https://github.com/z244370114/devicesinfo")
 
-# 你觉得还有什么需要作者更新的，都可以提出来。作者会抽时间完善
+## 你觉得还有什么需要作者更新的，都可以提出来。作者会抽时间完善
 
-# 最后如果你觉得对你有用，麻烦给一个start!
+## 最后如果你觉得对你有用，麻烦给一个start!
 
-# 如果这个项目对您有很大帮助，并且您想支持该项目的开发和维护，请随时扫描以下二维码进行捐赠。非常感谢您的捐赠。谢谢！
+## 如果这个项目对您有很大帮助，并且您想支持该项目的开发和维护，请随时扫描以下二维码进行捐赠。非常感谢您的捐赠。谢谢！
 
-# 如果疑问，也可加我VX：duangduang6201 加我时请加备注
+## 如果疑问，也可加我VX：**duangduang6201** 加我时请加备注
 
 <img alt="sdka" height="400" src="./app/src/main/assets/wx.JPG" width="400"/>
 
+# 感谢捐赠用户列表
 
+|  用户账号  | 用户名  | 打赏金额  |
+|:------:|:----:|:-----:|
+| _0xt56 | crab | 99.00 |
 
 # Step 1. Add the JitPack repository to your build file
 
