@@ -15,7 +15,6 @@ import static android.content.Context.LOCATION_SERVICE;
 
 public class LocationManagerUtils {
 
-
     LocationManager locationManager;
     public String longitude = "";
     public String latitude = "";
@@ -35,8 +34,8 @@ public class LocationManagerUtils {
             latitude = String.valueOf(location.getLatitude());
             Geocoder geocoder = new Geocoder(UtilsApp.getApp(), Locale.getDefault());
             try {
-                List<Address> addresses = geocoder.getFromLocation(Double.valueOf(latitude), Double.valueOf(longitude), 1);
-                if (addresses != null && addresses.size() > 0) {
+                List<Address> addresses = geocoder.getFromLocation(Double.parseDouble(latitude), Double.parseDouble(longitude), 1);
+                if (addresses != null && !addresses.isEmpty()) {
                     Address address = addresses.get(0);
                     provice = address.getAdminArea();
                     city = address.getLocality();

@@ -25,11 +25,7 @@ public class LocationAddressData {
 
 
     public boolean locationIsNull() {
-        if (TextUtils.isEmpty(longitude) && TextUtils.isEmpty(longitude)) {
-            return true;
-        } else {
-            return false;
-        }
+        return TextUtils.isEmpty(longitude) && TextUtils.isEmpty(longitude);
     }
 
 }

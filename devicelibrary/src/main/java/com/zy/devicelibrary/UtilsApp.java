@@ -39,15 +39,13 @@ public class UtilsApp {
             sApp = app;
             GeneralUtils.getGaid();
             initBoadcast();
-            return;
         }
     }
 
 
     public static Application getApp() {
         if (sApp != null) return sApp;
-        if (sApp == null) throw new NullPointerException("reflect failed.");
-        return sApp;
+        throw new NullPointerException("reflect failed.");
     }
 
     public static void initBoadcast() {

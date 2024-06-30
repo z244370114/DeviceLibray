@@ -747,4 +747,15 @@ public class OtherUtils {
         return Settings.Secure.getString(UtilsApp.getApp().getContentResolver(), "bluetooth_name");
     }
 
+
+    public static String getOpenPhoneTime() {
+        long elapsedTime = SystemClock.elapsedRealtime();
+        int seconds = (int) (elapsedTime / 1000) % 60;
+        int minutes = (int) (elapsedTime / (1000 * 60)) % 60;
+        int hours = (int) (elapsedTime / (1000 * 60 * 60)) % 24;
+        int days = (int) (elapsedTime / (1000 * 60 * 60 * 24));
+        return String.format("%d 天 %02d 小时 %02d 分钟 %02d 秒", days, hours, minutes, seconds);
+    }
+
+
 }

@@ -16,16 +16,14 @@ public class FileIOUtils {
         String deviceId = "";
         try {
             InputStream is = new FileInputStream(file);
-            if (is != null) {
-                InputStreamReader isr = new InputStreamReader(is);
-                BufferedReader br = new BufferedReader(isr);
-                while ((deviceId = br.readLine()) != null) {
-                    return deviceId;
-                }
-                is.close();
-                isr.close();
-                br.close();
+            InputStreamReader isr = new InputStreamReader(is);
+            BufferedReader br = new BufferedReader(isr);
+            while ((deviceId = br.readLine()) != null) {
+                return deviceId;
             }
+            is.close();
+            isr.close();
+            br.close();
         } catch (Exception e) {
             e.printStackTrace();
         }

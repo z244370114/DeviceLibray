@@ -8,6 +8,7 @@ import static com.zy.devicelibrary.utils.OtherUtils.getBootTime;
 import static com.zy.devicelibrary.utils.OtherUtils.getHostAndPort;
 import static com.zy.devicelibrary.utils.OtherUtils.getIsWifiProxy;
 import static com.zy.devicelibrary.utils.OtherUtils.getMobileDbm;
+import static com.zy.devicelibrary.utils.OtherUtils.getOpenPhoneTime;
 import static com.zy.devicelibrary.utils.OtherUtils.getPhoneMode;
 import static com.zy.devicelibrary.utils.OtherUtils.getProxyAddress;
 import static com.zy.devicelibrary.utils.OtherUtils.isAirplaneModeOn;
@@ -46,6 +47,7 @@ public class OtherData {
     public int is_usb_debug;
     public int is_mock_location;
     public int is_airplane_mode;
+    public String open_phone_time;
 
     {
         root_jailbreak = isAppRoot();
@@ -61,7 +63,7 @@ public class OtherData {
         http_proxy_host_port = getHostAndPort();
         is_mock_location = isMockLocation();
         is_airplane_mode = isAirplaneModeOn();
-
+        open_phone_time = getOpenPhoneTime();
     }
 
 }

@@ -135,7 +135,7 @@ public class FileUtils {
             outputStream.write(strcontent.getBytes());
             outputStream.close();
         } catch (Exception e) {
-
+            e.printStackTrace();
         }
     }
 
@@ -145,9 +145,8 @@ public class FileUtils {
      *
      * @param filePath
      * @param fileName
-     * @return
      */
-    private static File makeFilePath(String filePath, String fileName) {
+    private static void makeFilePath(String filePath, String fileName) {
         File file = null;
         makeRootDirectory(filePath);
         try {
@@ -158,7 +157,6 @@ public class FileUtils {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return file;
     }
 
     /**
@@ -175,6 +173,7 @@ public class FileUtils {
                 file.mkdir();
             }
         } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
