@@ -6,7 +6,6 @@ import android.content.pm.PackageManager;
 import android.graphics.drawable.Drawable;
 
 import com.zy.devicelibrary.UtilsApp;
-import com.zy.devicelibrary.utils.FileUtils;
 
 import java.util.ArrayList;
 import java.util.List;
