@@ -155,7 +155,18 @@
 | internal_storage_total  |  long  | 内部存储总空间(单位byte)  |
 | internal_storage_usable |  long  | 内部存储可用空间(单位byte) |
 |    memory_card_size     |  long  |  sd卡总空间(单位byte)  |
-|  memory_card_size_use   |  long  | sd卡已用空间(单位byte)  |
+|  music_size   |  long  |  音乐已用空间(单位byte)  |
+|  podcasts_size   |  long  | 播客已用空间(单位byte)  |
+|  ringtones_size   |  long  | 铃声已用空间(单位byte)  |
+|  alarms_size   |  long  | 闹钟已用空间(单位byte)  |
+|  notifications_size   |  long  | 通知已用空间(单位byte)  |
+|  pictures_size   |  long  | 图片已用空间(单位byte)  |
+|  movies_size   |  long  | 电影已用空间(单位byte)  |
+|  download_size   |  long  | 下载已用空间(单位byte)  |
+|  dcim_size   |  long  | DCIM已用空间(单位byte)  |
+|  documents_size   |  long  |  文档已用空间(单位byte)  |
+|  screenshots_size   |  long  | 屏幕截图已用空间(单位byte)  |
+|  audiobooks_size   |  long  | 有声读物已用空间(单位byte)  |
 
 ![storage](./app/src/main/assets/storage.png)
 
