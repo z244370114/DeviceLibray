@@ -2,7 +2,7 @@
 
 获取Android设备详细信息
 
-# Flutter版DeviceLibray
+# Flutter版DeviceLibrary
 
 [https://github.com/z244370114/devicesinfo](https://github.com/z244370114/devicesinfo "https://github.com/z244370114/devicesinfo")
 
