@@ -1,11 +1,13 @@
 package com.example.devicelibrary
 
+import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -70,13 +72,15 @@ class ListDataActivity : AppCompatActivity() {
             }
 
             "存储界面" -> {
-                map = JsonMap.getMap(
-                    Gson().toJson(
-                        StorageQueryUtil.queryWithStorageManager(
-                            StorageData()
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+                    map = JsonMap.getMap(
+                        Gson().toJson(
+                            StorageQueryUtil.queryWithStorageManager(
+                                StorageData()
+                            )
                         )
                     )
-                )
+                }
                 lists = storageList
             }
 

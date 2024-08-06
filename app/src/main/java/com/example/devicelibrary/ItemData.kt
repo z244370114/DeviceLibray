@@ -90,7 +90,19 @@ object ListName {
         "sd卡总空间(单位byte)",
         "sd卡已用空间(单位byte)",
         "内部存储可用空间(单位byte)",
-        "内部存储总空间(单位byte)"
+        "内部存储总空间(单位byte)",
+        "音乐大小(单位byte)",
+        "播客大小(单位byte)",
+        "铃声大小(单位byte)",
+        "闹铃大小(单位byte)",
+        "通知大小(单位byte)",
+        "图片大小(单位byte)",
+        "电影大小(单位byte)",
+        "下载大小(单位byte)",
+        "DCIM大小(单位byte)",
+        "文档大小(单位byte)",
+        "屏幕截图大小(单位byte)",
+        "有声读物大小(单位byte)",
     )
     val otherList = arrayOf(
         "最后一次开机时间，以毫秒为单位",

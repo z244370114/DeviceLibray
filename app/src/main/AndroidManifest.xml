@@ -23,9 +23,11 @@
         android:theme="@style/Theme.DeviceLibrary">
         <activity
             android:name=".ListDataActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:exported="false" />
-        <activity android:name=".MainActivity">
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
