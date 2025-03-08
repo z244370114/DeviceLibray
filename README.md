@@ -22,6 +22,7 @@
 |:------:|:----------:|:-----:|
 | _0xt56 |    crab    | 99.00 |
 | YanYH  | Gz66y1x*** | 99.99 |
+| _wechat_user_yu  | Mr.yu | 16.88 |
 
 # Step 1. Add the JitPack repository to your build file
 
